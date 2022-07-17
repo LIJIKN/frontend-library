@@ -1,0 +1,44 @@
+<div class='card'>
+    <form (ngSubmit)="editProduct()">
+<div class='card-header'>
+ Edit Product
+</div>
+<div class='card-body'>            
+  <div class='table-responsive'>
+    <table class='table'>       
+    
+      <tbody>  
+          
+            <tr>
+                <td><label>image</label></td>
+                <td><input type="text" name="p_image" [(ngModel)]="buk.image"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>name</label></td>
+                <td><input type="text" name="p_buk" [(ngModel)]="buk.name"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>author name</label></td>
+                <td><input type="text" name="p_name" [(ngModel)]="buk.authorname"/></td>                  
+              </tr>  
+              <tr>
+                <td><label>price</label></td>
+                <td><input type="text" name="p_price" [(ngModel)]="buk.price"/></td>                  
+              </tr>  
+              <tr>
+                <td> <label>starRating</label></td>
+                <td><input type="text" name="p_rate" [(ngModel)]="buk.starRating"/></td>                  
+              </tr>  
+               
+                
+              <tr>
+                <td></td>
+                <td><input type="submit" value="Submit" /></td>                  
+              </tr>             
+      </tbody>
+    </table>
+  </div>
+</div>
+</form>
+</div>
+

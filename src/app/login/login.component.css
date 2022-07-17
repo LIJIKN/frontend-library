@@ -1,0 +1,34 @@
+#img{
+    margin-top: 3%;
+    margin-left: 45%;
+}
+h1{
+    margin-left: 45%;
+    color: blueviolet;
+}
+
+.btn {
+    width: 10%;
+    color: yellow;
+    background-color: blueviolet;
+    margin-left: 45%;
+}
+#in {
+    margin-left: 28%;
+    background-color: aliceblue;
+    width: 40%;
+}
+#pp{
+    margin-left: 50%;
+}
+.text-danger{
+    margin-left: 30%;
+}
+.navbar{
+    background-color: aliceblue;
+}
+.navbar-brand{
+    color: blue;
+    font-style: italic;
+    font-size: x-large;
+}

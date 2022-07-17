@@ -1,0 +1,23 @@
+#home{
+    height: 750px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+a{
+    
+    margin-left: 250px;
+    text-decoration: none;
+    color: rgb(170, 97, 9);
+}
+.card{
+    background-color: bisque;
+}
+.navbar{
+    background-color: rgb(22, 32, 12);
+}
+
+
+

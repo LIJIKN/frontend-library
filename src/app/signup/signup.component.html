@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Library</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/signup">SingUp</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<img [src] ="url" id="img">
+<div class="contoxainer b">
+    <div class="card mx-auto container text-center">
+    <h1>  <strong>Sign Up</strong></h1>
+    
+    <div>
+      <form  #form="ngForm" (ngSubmit)="form.valid &&onsubmit()">
+    <label for="fname"></label><br>
+    <input type="text" placeholder="FirstName" class="form-control" name="uname" required #fname="ngModel" [(ngModel)]="user.fname" >
+    <label class="text-danger" *ngIf="form.submitted && fname.errors?.['required'] "> enter fisrt name</label>
+    
+    <br><br>
+    <label for="fname"></label><br>
+    <input type="text" placeholder="Last Name" class="form-control" name="yname" required #lname="ngModel" [(ngModel)]="user.lname" >
+    <label class="text-danger" *ngIf="form.submitted && lname.errors?.['required'] "> enter last name</label>
+    
+    <br><br>
+    <label for="email"></label><br>
+    <input type="email" placeholder="Email" class="form-control" name="eml" required #email="ngModel" [(ngModel)]="user.email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+    <label class="text-danger" *ngIf="form.submitted && email.errors?.['required'] "> enter email</label>
+    <label class="text-danger" *ngIf="form.submitted && email.errors?.['pattern']"> enter valid email</label>
+    
+    <br><br>
+    <label for="password"></label><br>
+    <input type="password" placeholder="PassWord" class="form-control" name="pas" required #pass="ngModel" [(ngModel)]="user.pass" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+    <label class="text-danger" *ngIf="form.submitted && pass.errors?.['required'] "> enter password</label>
+    <label class="text-danger" *ngIf="form.submitted && pass.errors?.['pattern']"> enter valid password</label>
+    
+    <br><br>
+    <button  type="submit" class="btn btn-warning">SignUp</button><br>
+    <h4>You an account? <a routerLink="/login">Login</a></h4>
+      </form>
+    </div>
+    
+    </div></div>
+
+
+
+
+
